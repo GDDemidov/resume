@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, course, css, tags">
+    <meta name="description" content="Это базовый курс по html">
+    <title>HTML Course!</title>
+    <style>
+        .header {
+            border-bottom: 2px solid green;
+        }
+
+        .card{
+            margin-left: 10px;
+            color: aqua;
+        }
+        .card2 {
+            margin-top: 20px;
+            color: brown;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text in html1</h1>
+    <h2>Text in html2</h2>
+    <h3>Text in html3</h3>
+    <h4>Text in html4</h4>
+    <h5>Text in html5</h5>
+    <h6>Text in html6</h6>
+    Просто текст
+    <hr>
+    <p>Lorem ipsum <strong><em> dolor sit amet</em></strong> consectetur, adipisicing elit. Et velit laboriosam nostrum! Non deserunt exercitationem aspernatur. Odio, eum? Quod, ad?</p>
+    <p><b>Lorem</b> ipsum dolor sit amet consectetur, adipisicing elit. Et velit laboriosam nostrum! Non deserunt exercitationem aspernatur. Odio, eum? Quod, ad?</p>
+
+    <h1>Про картинки и ссылки</h1>
+
+    <a href="https://google.com">Сайт Google</a><br>
+    <a href="https://google.com" target="_blank">Сайт Google в новой вкладке</a>
+    <p>
+        <a href="index.html" target="_blank">Ссылка на свой файл</a>
+    </p>
+<hr>
+<h2>Картинка по ссылке</h2>
+<img src="https://kartinkof.club/uploads/posts/2022-05/1653193489_8-kartinkof-club-p-kartinki-privet-mir-8.png" alt="Здесь  должная быть картинка"   width="150">
+<h2>Картинка локально</h2>
+
+<img src="Pictures/PicHelloWorld.png" alt="Упс, ошибка" width="200">
+
+
+<h2>Списки</h2>
+<ul type="square">
+    <li>Элемент 1</li>
+    <li>Элемент 2</li>
+    <li>Элемент 3</li>
+    <li>Элемент 4</li>
+    <li>Элемент 5</li>
+</ul>
+<ol>
+    <li>Элемент 1</li>
+    <li>Элемент 2</li>
+    <li>Элемент 3</li>
+    <li>Элемент 4</li>
+    <li>Элемент 5</li>
+</ol>
+
+
+<ul type="square">
+    <li>Элемент 1</li>
+    <li>Элемент 2</li>
+    <ul>
+        <li>Подэлемент 1</li>
+        <li>Подэлемент 2</li>
+        <li>Подэлемент 3</li>
+    </ul>
+    <li>Элемент 3</li>
+    <li>Элемент 4</li>
+    <li>Элемент 5</li>
+</ul>
+
+
+<!-- ul>li{Element $}*5 - добавляет список со значениями $ это итератор -->
+
+<h2>Таблицы</h2>
+
+<table width="500">
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Возвраст</th>
+            <th>Работа</th>
+        </tr>
+    </thead>    
+    <tr>
+        <td>Глеб</td>
+        <td>23</td>
+        <td>Бизнес-аналитик</td>
+    </tr>
+    <tr>
+        <td>Максим</td>
+        <td>24</td>
+        <td>Веб-разработчик</td>
+    </tr>
+</table>
+
+<h2>Формы</h2>
+
+<form>
+    <div>
+        <label for="text2">Текст</label>
+        <input type="text" value="Текст по умолчанию" id="text2" readonly>
+    </div>
+    <div>    
+        <label for="email">Email</label>
+        <input type="text" placeholder="Введите свой email" id="email">
+    </div>
+        <label for="pas">Пароль</label>
+        <input type="password" id="pas">
+    <div>
+    </div>
+        <label for="num">Число мин -1</label>
+        <input type="number" id="num" min="-1">
+    <div>
+    <div>
+        <label for="ran">Range</label>
+        <input type="range" min="0" max="10" id="ran">
+    </div>
+    <div>
+        <label for="date">Дата</label>
+        <input type="date" id="date">
+    </div>
+    <div>
+        <label for="col">Цвет</label>
+        <input type="color" id="col">
+    </div>
+    <div>
+        <label for="text">Текст многостроковый</label><br>
+        <textarea id="text" cols="34" rows="3"></textarea>
+    </div>
+    <div>
+        <label for="sel">пол</label>
+        <select id="sel">
+            <option value="male">Мужчина</option>
+            <option value="female" selected>Женщина</option>
+            <option value="other">Другое</option>
+        </select>
+    </div>
+    <div>
+        <label>Количество работ</label>
+        <input type="radio" name="work">1
+        <input type="radio"name="work">2
+        <input type="radio"name="work">3
+        <input type="radio"name="work">4
+    </div>
+    <div>
+        <label>ЕДА</label>
+        <input type="checkbox" name="food">1
+        <input type="checkbox"name="food">2
+        <input type="checkbox"name="food">3
+        <input type="checkbox"name="food">4
+    </div>
+
+    <!-- <input type="submit" value="Отправить форму"> -->
+<button>Отправить форму</button>
+<input type="reset" value="Очистить форму">
+</form>
+
+<h2>Inline Blocks</h2>
+<p style="border: 2px solid green;">Lorem ipsum dolor <span style="border: 2px solid black; background-color: aqua;" > sit amet consectetur adipisicing</span> elit. Eius omnis, a reprehenderit voluptatibus quisquam corporis hic maiores commodi animi dolore?</p>
+<a href="#">Link</a><a href="#" style="border: 2px solid red;">Link2</a>
+<div style="border: 2px solid blue;">
+    <a href="#">Link3</a>
+</div>
+
+<h2>Классы id</h2>
+<div id="head" class="header">
+    <h3>
+        Заголовок сайта
+    </h3>
+</div>
+<div id="navigation" class="card">
+    <ul>
+        <li class=""><a href="№">Item 1</a></li>
+        <li class=""><a href="№">Item 2</a></li>
+        <li class=""><a href="№">Item 3</a></li>
+        <li class=""><a href="№">Item 4</a></li>
+    </ul>
+</div>
+<hr>
+<div id="body" class="card">
+    <p>Тело сайта</p>
+    <div class="card2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit repellat ab temporibus libero minus culpa ducimus quas necessitatibus laudantium!
+        </p>    
+    </div>
+    </div>
+<div id="footer">
+ <h4>Подвал сайта</h4>
+</div>
+
+Тэги бывают: 
+<ul>
+    <li>
+        <header>header</header>
+    </li>
+    <li>
+        <nav>
+            nav навигация сайта
+        </nav>
+    </li>
+    <li>
+        <footer>footer</footer>
+    </li>
+    <li>
+        <section>section секция например статей</section>
+    </li>
+    <li>
+        <aside>aside - боеовые меню</aside>
+    </li>
+</ul>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
